@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Contacts
+{% endblock title %}
+{% block body %}
+<style>
+  .form-controls{
+    width: 100%;
+    border-radius:10px;
+    margin-left: 50px;
+  }
+  .form-label{
+    text-shadow: 2px -2px 5px blue ;
+  }
+  .contact{
+    margin: auto;
+    background-color: transparent;
+    /* margin-left: 12%; */
+  }
+  .contact h1{
+    margin: auto 39%;
+  }
+  .form-container{
+    border: 2px solid rgba(255, 255, 255, 0.577);
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 50px;
+  }
+  .form-field-btn{
+    color: rgb(0, 0, 63);
+    margin: auto 130%;
+    &:hover{
+      color: blueviolet;
+    }
+  }
+</style>
+
+<div class="container my-3 contact">
+    <div class="row justify-content-center ">
+      <div class="col-lg-9">
+        <h1 class="mb-3">Contact Us</h1>
+        <form class="form-container ">
+          <div class="row g-3 ">
+            <div class="col-md-5">
+              <label for="your-name" class="form-label ">Your Name</label>
+              <input type="text" class="form-controls" id="your-name" name="your-name" required>
+            </div>
+            <div class="col-md-5">
+              <label for="your-surname" class="form-label ">Your Surname</label>
+              <input type="text" class="form-controls" id="your-surname" name="your-surname" required>
+            </div>
+            <div class="col-md-5">
+              <label for="your-email" class="form-label">Your Email</label>
+              <input type="email" class="form-controls" id="your-email" name="your-email" required>
+            </div>
+            <div class="col-md-5">
+              <label for="your-subject" class="form-label">Your Subject</label>
+              <input type="text" class="form-controls" id="your-subject" name="your-subject">
+            </div>
+            <div class="col-10">
+              <label for="your-message" class="form-label">Your Message</label>
+              <textarea class="form-controls" id="your-message" name="your-message" rows="5" required></textarea>
+            </div>
+            <div class="col-10">
+              <div class="row">
+                <div class="col-md-5">
+                  <button  type="submit" class="btn fw-bold form-field-btn" >Send</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+{% endblock body %}

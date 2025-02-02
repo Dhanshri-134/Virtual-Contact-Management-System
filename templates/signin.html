@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Sign In
+{% endblock title %}
+{% block body %}
+<div class="container signInForm">
+  <h1 class="text-center">Sign In </h1>
+  <div class="formContainer">
+    <form method="POST" action="#" class="Form">
+      <div class="form-field">
+        <label class="FL"> Username
+          <input type="text" name="username" class="form-control" required>
+        </label>
+      </div>
+      <div class="form-field">        
+        <label class="FL"> First Name
+        <input type="text" name="FirstName" class="form-control" required>
+      </label>
+    </div>
+    <div class="form-field">
+      <label class="FL"> Last Name
+        <input type="text" name="LastName" class="form-control" required>
+      </label>
+    </div>
+    <div class="form-field">
+      <label class="FL"> Contact No.
+        <input type="number" name="Contact" class="form-control" required>
+      </label>
+    </div>
+    <div class="form-field">
+      <label> Password
+        <input type="password" name="password" class="form-control" required>
+      </label>
+    </div>
+    <div class="form-field">
+      <label> Confirm Password
+        <input type="password" class="form-control">
+      </label>
+    </div>
+      <button type="submit"  class="form-field-btn btn">
+        SUBMIT
+      </button>
+    </form>
+
+  </div>
+</div>
+{% endblock body %}

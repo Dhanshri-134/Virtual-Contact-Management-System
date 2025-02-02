@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Log In
+{% endblock title %}
+{% block body %}
+<div class="container signInForm ">
+  <h1 class="text-center my-5">Log In </h1>
+  <div class="formContainer my-5 px-0">
+    <form method="POST" action="#" class="Form">
+      <div class="form-field my-2">
+        <label> Username
+          <input type="text" name="username" class="form-control" required>
+        </label>
+      </div>
+    <div class="form-field">
+      <label> Password
+        <input type="password" name="password" class="form-control" required>
+      </label>
+    </div>
+      <button type="submit"  class="form-field-btn btn my-5 " style="margin-bottom: 10px !important ;">
+        SUBMIT
+      </button>
+    </form>
+
+  </div>
+</div>
+{% endblock body %}
